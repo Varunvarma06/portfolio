@@ -1,15 +1,22 @@
-// Aesthetic Scroll Reveal Configuration
+// Initialize ScrollReveal for professional entrance
 const sr = ScrollReveal({
-    origin: 'bottom',
-    distance: '30px',
-    duration: 1200,
-    delay: 100,
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    interval: 100
+    distance: '40px',
+    duration: 1000,
+    delay: 200,
+    reset: false
 });
 
-sr.reveal('.reveal');
-sr.reveal('.card', { interval: 150 });
+sr.reveal('.reveal', { interval: 100 });
+sr.reveal('.hero h1', { origin: 'top' });
+sr.reveal('.bento-item', { 
+    interval: 150,
+    scale: 0.95,
+    mobile: true 
+});
 
-// Subtle interaction: Log a greeting for other devs
-console.log("Welcome to Vaun Varma's Portfolio.");
+// Custom Cursor (Optional Aesthetic touch)
+const cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+});
