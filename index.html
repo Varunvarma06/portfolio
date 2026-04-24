@@ -3,53 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaun Varma | Developer</title>
+    <title>Vaun Varma | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="cursor"></div>
+    
     <nav>
-        <div class="logo">VVG</div>
+        <div class="logo">V. VARMA</div>
         <div class="nav-links">
-            <a href="mailto:varunvarma948@gmail.com">Contact</a>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="mailto:varunvarma948@gmail.com" class="btn-contact">Get in Touch</a>
         </div>
     </nav>
 
-    <header class="hero">
-        <h1 class="reveal">Vaun Varma G.</h1>
-        <p class="reveal">Building responsive interfaces & IoT solutions.</p>
-    </header>
+    <main class="container">
+        <section class="hero">
+            <h1 class="reveal">Engineering <span class="gradient-text">Experiences.</span></h1>
+            <p class="reveal delay-1">Web Development Intern & BCA Student at Presidency University.</p>
+        </section>
 
-    <section class="container">
-        <div class="grid">
-            <div class="card wide reveal">
-                <span class="tag">About</span>
-                <p>I am a diligent and organized developer currently pursuing my BCA at Presidency University[cite: 5, 15]. I focus on bridging the gap between hardware (IoT) and modern web interfaces[cite: 28, 9].</p>
+        <div class="bento-grid">
+            <div class="bento-item experience reveal">
+                <span class="label">Latest Role</span>
+                <h3>Web Development Intern</h3>
+                <p>Prodigy InfoTech [cite: 9]</p>
+                <div class="stat">25% Efficiency Increase </div>
             </div>
 
-            <div class="card reveal">
-                <span class="tag">Technical Stack</span>
-                <div class="skills-list">
-                    <span>Python</span> <span>Java</span> <span>JavaScript</span> 
-                    <span>React.js</span> <span>OpenCV</span> <span>MongoDB</span>
+            <div class="bento-item skills reveal">
+                <span class="label">Tech Stack</span>
+                <div class="tags">
+                    <span>Python</span><span>Java</span><span>React.js</span><span>OpenCV</span><span>MySQL</span>
                 </div>
             </div>
 
-            <div class="card reveal">
-                <span class="tag">Experience</span>
-                <h3>Prodigy InfoTech</h3>
-                <p>Web Development Intern [cite: 9]</p>
-                <small>Improved UI efficiency by 25% using reusable components[cite: 11].</small>
+            <div class="bento-item project reveal">
+                <span class="label">Featured Project</span>
+                <h3>Hand-Gesture Speech Converter</h3>
+                <p>Raspberry Pi & ML based system for social impact[cite: 31, 33].</p>
             </div>
 
-            <div class="card wide reveal">
-                <span class="tag">Featured Project</span>
-                <h3>Hand-Gesture to Speech Converter</h3>
-                <p>A social-impact project using Raspberry Pi, TensorFlow, and OpenCV to support speech-impaired individuals[cite: 31, 32, 33].</p>
+            <div class="bento-item education reveal">
+                <span class="label">Education</span>
+                <h3>BCA </h3>
+                <p>Presidency University </p>
+                <p class="small">CGPA: 6.00 (Pursuing) </p>
+            </div>
+
+            <div class="bento-item iot reveal">
+                <span class="label">IoT Systems</span>
+                <h3>Cloud-Based Monitoring</h3>
+                <p>98% Uptime over 30-day testing[cite: 29].</p>
             </div>
         </div>
-    </section>
+    </main>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>
 </html>
