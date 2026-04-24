@@ -6,62 +6,77 @@
     <title>Vaun Varma | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    <div class="cursor"></div>
-    
+
     <nav>
         <div class="logo">V. VARMA</div>
         <div class="nav-links">
-            <a href="#work">Work</a>
             <a href="#about">About</a>
-            <a href="mailto:varunvarma948@gmail.com" class="btn-contact">Get in Touch</a>
+            <a href="#work">Work</a>
+            <a href="mailto:varunvarma948@gmail.com" class="btn-contact">Contact</a>
         </div>
     </nav>
 
     <main class="container">
         <section class="hero">
-            <h1 class="reveal">Engineering <span class="gradient-text">Experiences.</span></h1>
-            <p class="reveal delay-1">Web Development Intern & BCA Student at Presidency University.</p>
+            <h1 class="reveal-top">Vaun Varma <span class="gradient-text">Guntimadugu</span></h1>
+            <p class="reveal-top">Developer & IoT Enthusiast pursuing BCA at Presidency University.</p>
+        </section>
+
+        <section id="about" class="about-section reveal">
+            <div class="about-card">
+                <span class="label">Professional Summary</span>
+                <p>I consider myself a responsible, organized, and diligent person looking for my first professional work experience. Currently a BCA student (2023-2026), I am eager to join a challenging organization that allows me to update my skills with the latest trends in technology.</p>
+            </div>
         </section>
 
         <div class="bento-grid">
-            <div class="bento-item experience reveal">
-                <span class="label">Latest Role</span>
+            <div class="bento-item wide reveal">
+                <span class="label">Experience</span>
                 <h3>Web Development Intern</h3>
-                <p>Prodigy InfoTech [cite: 9]</p>
-                <div class="stat">25% Efficiency Increase </div>
+                <p>Prodigy InfoTech (Remote)</p>
+                <ul class="bento-list">
+                    <li>Engineered responsive web interfaces using HTML, CSS, and JS.</li>
+                    <li>Reduced frontend development time by 25% with reusable UI components.</li>
+                </ul>
             </div>
 
-            <div class="bento-item skills reveal">
-                <span class="label">Tech Stack</span>
+            <div class="bento-item reveal">
+                <span class="label">Technical Stack</span>
                 <div class="tags">
-                    <span>Python</span><span>Java</span><span>React.js</span><span>OpenCV</span><span>MySQL</span>
+                    <span>Python</span><span>Java</span><span>C</span><span>React.js</span><span>JavaScript</span><span>MongoDB</span>
                 </div>
             </div>
 
-            <div class="bento-item project reveal">
-                <span class="label">Featured Project</span>
-                <h3>Hand-Gesture Speech Converter</h3>
-                <p>Raspberry Pi & ML based system for social impact[cite: 31, 33].</p>
-            </div>
-
-            <div class="bento-item education reveal">
+            <div class="bento-item reveal">
                 <span class="label">Education</span>
-                <h3>BCA </h3>
-                <p>Presidency University </p>
-                <p class="small">CGPA: 6.00 (Pursuing) </p>
+                <h3>BCA</h3>
+                <p>Presidency University</p>
+                <div class="stat">6.00 CGPA</div>
             </div>
 
-            <div class="bento-item iot reveal">
+            <div class="bento-item wide reveal">
+                <span class="label">Social Impact Project</span>
+                <h3>Hand-Gesture to Speech Converter</h3>
+                <p>Built a Raspberry Pi-based system using TensorFlow and OpenCV to support speech-impaired individuals.</p>
+            </div>
+
+            <div class="bento-item reveal">
                 <span class="label">IoT Systems</span>
-                <h3>Cloud-Based Monitoring</h3>
-                <p>98% Uptime over 30-day testing[cite: 29].</p>
+                <h3>Cloud Temperature Monitor</h3>
+                <p>98% uptime over a 30-day test period using ESP8266.</p>
+            </div>
+
+            <div class="bento-item reveal">
+                <span class="label">Languages</span>
+                <p><strong>Native:</strong> Telugu</p>
+                <p><strong>Fluent:</strong> English & Kannada</p>
             </div>
         </div>
     </main>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>
 </html>
